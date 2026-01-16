@@ -5,12 +5,16 @@
   </div>
 
   <h2>2. 主轴方向（left/top）</h2>
-  <div class="demo-box" flex="dir:top main:between cross:start" style="height: 150px;">
-    <div class="demo-item item1">主轴垂直（column）</div>
-    <div class="demo-item item2">主轴两端对齐（justify-between）</div>
+  <div class="demo-box" flex="dir:left main:center cross:center" style="height: 150px;">
+    <div class="demo-item item1">dir:left</div>
+    <div class="demo-item item2">子项2</div>
+  </div>
+   <div class="demo-box" flex="dir:top main:center cross:center" style="height: 150px;">
+    <div class="demo-item item1">dir:top</div>
+    <div class="demo-item item2">子项2</div>
   </div>
 
-  <h2>3. 主轴对齐方式</h2>
+  <h2>3. 主轴对齐方式(left/right/stretch/justify)</h2>
   <div class="demo-box" flex="dir:left main:left cross:center">
     <div class="demo-item item1">justify-left</div>
     <div class="demo-item item2">子项2</div>
@@ -28,7 +32,7 @@
     <div class="demo-item item2">子项2</div>
   </div>
 
-  <h2>4. 交叉轴对齐方式</h2>
+  <h2>4. 交叉轴对齐方式(top/bottom/baseline/center/stretch)</h2>
   <div class="demo-box" flex="dir:left main:center cross:top" style="height: 100px;">
     <div class="demo-item item1">align-top</div>
     <div class="demo-item item2">子项2</div>
@@ -50,17 +54,17 @@
     <div class="demo-item item2">子项2</div>
   </div>
 
-  <h2>5. 基准对齐</h2>
-  <div class="demo-box" flex="dir:left main:center cross:top box:mean" style="height: 100px;">
-    <div class="demo-item item1">box:mean</div>
-    <div class="demo-item item2">子项2</div>
-  </div>
+  <h2>5. 基准对齐(first/last/mean/justify)</h2>
   <div class="demo-box" flex="dir:left main:center cross:bottom box:first" style="height: 100px;">
     <div class="demo-item item1">box:first</div>
     <div class="demo-item item2">子项2</div>
   </div>
   <div class="demo-box" flex="dir:left main:center cross:baseline box:last" style="height: 100px;">
     <div class="demo-item item1">box:last</div>
+    <div class="demo-item item2">子项2</div>
+  </div>
+   <div class="demo-box" flex="dir:left main:center cross:top box:mean" style="height: 100px;">
+    <div class="demo-item item1">box:mean</div>
     <div class="demo-item item2">子项2</div>
   </div>
   <div class="demo-box" flex="dir:left main:center cross:center box:justify" style="height: 100px;">
